@@ -23,8 +23,8 @@ mongoose.connect(connectionString,
 app.get('/', (req, res) => {
     res.send();
 });
-  
-app.get('api/products', async (req, res) => {
+
+app.get('/api/products', async (req, res) => {
     try
     {
         const products = await Product.find({});
